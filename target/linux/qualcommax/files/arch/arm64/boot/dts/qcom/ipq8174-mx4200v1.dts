@@ -9,6 +9,18 @@
 / {
 	model = "Linksys MX4200v1";
 	compatible = "linksys,mx4200v1", "qcom,ipq8074";
+
+	aliases {
+		/*
+		 * Aliases as required by u-boot
+		 * to patch MAC addresses
+		 */
+		ethernet1 = &dp2;
+		ethernet2 = &dp3;
+		ethernet3 = &dp4;
+		ethernet4 = &dp5;
+		label-mac-device = &dp2;
+	};
 };
 
 &wifi {
