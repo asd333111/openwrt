@@ -31,6 +31,7 @@ case "$FIRMWARE" in
 		caldata_extract "0:art" 0x1000 0x20000
 		;;
 	linksys,mx4200v1|\
+	linksys,mx4300|\
 	linksys,mx8500)
 		caldata_extract "0:art" 0x1000 0x20000
 		ath11k_remove_regdomain

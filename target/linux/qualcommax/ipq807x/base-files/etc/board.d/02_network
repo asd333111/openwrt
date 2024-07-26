@@ -29,6 +29,7 @@ ipq807x_setup_interfaces()
 	compex,wpq873|\
 	linksys,mx4200v1|\
 	linksys,mx4200v2|\
+	linksys,mx4300|\
 	prpl,haze|\
 	redmi,ax6|\
 	spectrum,sax1v1k|\
