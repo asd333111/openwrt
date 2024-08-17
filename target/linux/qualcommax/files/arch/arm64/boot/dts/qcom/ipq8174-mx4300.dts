@@ -162,82 +162,39 @@
 			};
 
 			partition@1000000 {
-				label = "u_env";
-				reg = <0x1000000 0x100000>;
-			};
-
-			partition@1100000 {
-				label = "s_env";
-				reg = <0x1100000 0x100000>;
-			};
-
-			partition@1200000 {
-				label = "devinfo";
-				reg = <0x1200000 0x40000>;
-				read-only;
-			};
-
-			partition@1240000 {
-				label = "kernel";
-				reg = <0x1240000 0xaf40000>;
-			};
-
-			partition@1a40000 {
-				label = "rootfs";
-				reg = <0x1a40000 0xa740000>;
-			};
-
-			partition@c180000 {
-				label = "alt_kernel";
-				reg = <0xc180000 0xaf40000>;
-			};
-
-			partition@c980000 {
-				label = "alt_rootfs";
-				reg = <0xc980000 0xa740000>;
-			};
-
-			partition@170c0000 {
-				label = "sysdiag";
-				reg = <0x170c0000 0x400000>;
-				read-only;
-			};
-
-			partition@174c0000 {
 				label = "0:ethphyfw";
-				reg = <0x174c0000 0x80000>;
+				reg = <0x1000000 0x80000>;
 				read-only;
 			};
 
-			partition@17540000 {
-				label = "syscfg";
-				reg = <0x17540000 0x79c0000>;
-				read-only;
-			};
-
-			partition@1ef00000 {
-				label = "secured_store";
-				reg = <0x1ef00000 0x400000>;
-				read-only;
-			};
-
-			partition@1f300000 {
+			partition@1080000 {
 				label = "0:wififw";
-				reg = <0x1f300000 0x1900000>;
+				reg = <0x1080000 0x1900000>;
 				read-only;
 			};
 
-			partition@20c00000 {
-				label = "app2_data";
-				reg = <0x20c00000 0x16180000>;
+			partition@2980000 {
+				label = "devinfo";
+				reg = <0x2980000 0x80000>;
 				read-only;
 			};
 
-			partition@36d80000 {
-				label = "app2";
-				reg = <0x36d80000 0x9280000>;
+			partition@2a00000 {
+				label = "tzcfg";
+				reg = <0x2a00000 0x2000000>;
 				read-only;
 			};
+
+			partition@4a00000 {
+				label = "rootfs";
+				reg = <0x4a00000 0x1db00000>;
+			};
+
+			partition@22500000 {
+				label = "rootfs_1";
+				reg = <0x22500000 0x1db00000>;
+			};
+
 		};
 	};
 };
