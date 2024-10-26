@@ -1,0 +1,9 @@
+check_ramoverlay() {
+	RAMOVERLAY=
+	grep -q 'ramoverlay=' /proc/cmdline && RAMOVERLAY=true
+	if [ "$RAMOVERLAY" = "true" ]; then
+		ramoverlay
+	fi
+}
+
+boot_hook_add preinit_mount_root check_ramoverlay
